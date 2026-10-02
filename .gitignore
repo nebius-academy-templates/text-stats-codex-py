@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments. These are listed here so `git clean -fd` — which the
+# practice tasks use to reset the workspace — leaves them alone.
+.venv/
+venv/
+env/
+ENV/
