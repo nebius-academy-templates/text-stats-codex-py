@@ -1,0 +1,9 @@
+The Text Statistics Tool
+
+This file is here so there is something to run the tool against.
+Point the tool at it and it will print a few numbers.
+
+Words are whatever whitespace separates, so "don't" counts as one word
+and this sentence ends with a full stop still attached to "stop."
+
+Blank lines count as lines. That is a choice, not an accident.
