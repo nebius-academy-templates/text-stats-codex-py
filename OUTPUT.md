@@ -38,7 +38,7 @@ placeholders, or an answer copied from this empty shape:
 
 ## Field rules
 
-- `pr`: the reviewed PR URL, branch names, full candidate commit SHA before your report commit, and complete changed-file list. Include the two supplied instruction files as well as the application change. Do not use your submission commit as the reviewed candidate.
+- `pr`: the review URL, branch names, full candidate commit SHA before your report commit, and complete changed-file list. For the current local-diff exercise, use https://github.com/nebius-academy-templates/text-stats-codex-py/compare/main...codex/lesson-5, base `main`, and head `codex/lesson-5`. This comparison URL is not a submitted PR; do not invent a PR number. Include the two supplied instruction files as well as the application change. Do not use your submission commit as the reviewed candidate.
 - `human_questions`: at least one question and initial observation under each of the practice's four headings. These are the learner's manual pass, not reconstructed model findings.
 - `model_findings`: one entry per actual finding, unique IDs, and assessment `Useful`, `Weak`, or `False`, with the learner's evidence-based reason. If there were no findings, use `[]`.
 - `missed_findings`: only independently confirmed issues absent from that model run. Use `[]` when none were established. No finding is automatically a miss because a response was empty.
