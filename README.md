@@ -20,12 +20,13 @@ python cli.py samples/sample.txt
 
 ## Tests
 
-Run the suite from the repo root — `conftest.py` is what puts the root on
-the import path, so running it from anywhere else fails with
-`ModuleNotFoundError`.
+Run the application suite from the repository root. Project tests live in
+`project_tests/`; `pytest.ini` limits default discovery to that directory.
+The name `tests/` is reserved for the learning platform's validation scripts,
+which are distributed separately and are not part of the application suite.
 
 ```bash
-pytest
+python -m pytest -q
 ```
 
 ## Layout
@@ -38,7 +39,8 @@ text-stats/
 ├── io_utils.py       # reading files
 ├── samples/
 │   └── sample.txt
-├── tests/
+├── project_tests/
+├── pytest.ini
 ├── conftest.py
 └── requirements.txt
 ```
