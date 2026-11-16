@@ -5,6 +5,7 @@ import sys
 import traceback
 from pathlib import Path
 
+import stats
 from io_utils import read_lines
 from report import build_report
 
@@ -16,6 +17,9 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         description="Report statistics about a text file.",
     )
     parser.add_argument("path", help="path to the text file to analyse")
+    parser.add_argument(
+        "-w", "--words-only", action="store_true", help="print only the word count"
+    )
     return parser.parse_args(argv)
 
 
@@ -30,7 +34,10 @@ def main(argv: list[str] | None = None) -> None:
         traceback.print_exc()
         return
 
-    print(build_report(lines))
+    if args.words_only:
+        print(stats.count_words(lines))
+    else:
+        print(build_report(lines))
 
 
 if __name__ == "__main__":
